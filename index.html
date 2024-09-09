@@ -1,0 +1,186 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="C:\Users\User\Desktop\js\jquery.js"></script>
+    <style>
+        .highlight{
+            background-color: lightyellow;
+        }
+        .completed{
+            text-decoration: line-through;
+            color: gray;
+        }
+        .removeButton{
+            color: red;
+            cursor:pointer;
+        }
+        .editButton{
+            color: rgb(79, 79, 100);
+            
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Task Manager</h1>
+    <input type="text" id="taskInput" placeholder="Enter the task">
+    <button id="addTask">Add Task</button>
+    <ul id="taskList">
+
+    </ul>
+
+
+
+    
+    <script src="C:\Users\User\Desktop\js\Task manager\script.js"></script>
+    
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+     body {
+            font-family: Arial, sans-serif;
+            background-image: url('bg-img.png');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; /* Prevents the background image from repeating */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 3rem;
+            margin-top: 20px;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.6); /* Adjusted opacity */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            font-size: 1.2rem;
+            border: 2px solid #888;
+            border-radius: 5px;
+            margin-right: 10px;
+            transition: border 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border: 2px solid #4CAF50;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: rgba(200, 200, 200, 0.8);
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+
+        li:hover {
+            background: rgba(180, 180, 180, 0.9);
+        }
+
+        .taskText {
+            font-size: 1.2rem;
+            flex-grow: 1;
+        }
+
+        .highlight {
+            background-color: lightyellow;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .removeButton,
+        .editButton {
+            margin-left: 10px;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+
+        .removeButton {
+            background-color: #ff4444;
+            color: white;
+        }
+
+        .removeButton:hover {
+            background-color: #ff2b2b;
+        }
+
+        .editButton {
+            background-color: #5bc0de;
+            color: white;
+        }
+
+        .editButton:hover {
+            background-color: #31b0d5;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Task Manager</h1>
+    <div class="container">
+        <input type="text" id="taskInput" placeholder="Enter the task">
+        <button id="addTask">Add Task</button>
+        <ul id="taskList"></ul>
+    </div>
+    
+    <script src="C:/Users/User/Desktop/js/Task manager/script.js"></script>
+</body>
+</html>
